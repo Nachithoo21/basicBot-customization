@@ -53,11 +53,11 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "IrkinBot",
         language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Nachithoo/basicBot/master/lang/en.json",
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
         lockdownEnabled: false,
@@ -91,20 +91,20 @@
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: "facebook.com/groups/losgumer",
         youtubeLink: null,
-        website: null,
+        website: "los-gumer.com",
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/Yemasthui/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/Nachithoo/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/Nachithoo/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/Nachithoo/basicBot/master/basicBot.js', extend);
 
 }).call(this);
